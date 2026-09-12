@@ -1,7 +1,8 @@
+json
 {
-  "name": "relay",
+  "name": "relay-server",
   "version": "1.0.0",
-  "description": "A minimal end-to-end-encrypted messaging site. The server relays ciphertext only.",
+  "private": true,
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
@@ -9,5 +10,11 @@
   "engines": {
     "node": ">=18"
   },
-  "license": "MIT"
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2"
+  }
 }
