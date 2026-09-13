@@ -34,7 +34,7 @@ const MAX_GROUP_MEMBERS = 50;
 // timing and (for groups) membership — but never its content, filename, or
 // whether it's a photo or a video.
 const MEDIA_DIR = path.join(__dirname, 'data', 'media');
-const MEDIA_MAX_BYTES = 25 * 1024 * 1024; // 25MB ciphertext per attachment
+const MEDIA_MAX_BYTES = 200 * 1024 * 1024; // 200MB ciphertext per attachment
 const MEDIA_ID_RE = /^[0-9a-f-]{36}$/i;
 // NOTE: uploaded attachments are kept indefinitely — there's no expiry or
 // "delete after delivery" job, unlike the message mailbox (which is popped
